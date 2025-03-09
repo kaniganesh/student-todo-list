@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:beige;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:cadetblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    display: block;
+    width: 200px;
+    margin-left: 300px;
+    padding: 10px;
+    background-color: #266bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  button:hover {
+    background-color: #0e4bcf;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #studentTable th{
+    background: rgb(215,215,215);
+    background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(204,204,204,1) 100%);
+    color: black;
+}
+#studentTable table,th,td{
+
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#studentTable .tbody{
+  background-color: white;
+}
+
+#studentTable{
+
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+
+}
+  
+  
+  #edit {
+    color: red;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  #trash {
+    color: red;
+    cursor: pointer;
+  }
+
+  .nameError,.ageError,.genderError,.courseError,.mailError{
+
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+button {
+  display: block;
+  width: 200px;
+  margin-left: 60px;
+  padding: 10px;
+  background-color: #266bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover {
+  background-color: #0e4bcf;
+}
+  
+#studentTable th{
+    display: none;
+}
+#studentTable tbody,tr,td{
+    display: block;
+    width: 99%;
+    background-color: white;    
+}
+#studentTable tr{
+    margin-bottom: 15px;
+    
+}
+#studentTable tbody,tr,td{
+    text-align: right;
+    position: relative;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 5px;
+}
+#studentTable td:last-child{
+    border-bottom: solid black 2px;
+}
+#studentTable td:first-child{
+  border-top: solid black 2px;
+}
+
+#studentTable td:before{
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: 600;
+}
+
+
+}
